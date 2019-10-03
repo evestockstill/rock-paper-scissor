@@ -33,7 +33,7 @@ body {
  padding: 10px 15px;
  position: relative;
 }
-.user-scorebtn, .comp-scorebtn, #shoot-button {
+.user-scorebtn, .comp-scorebtn {
     display: block;
     background: hsla(226, 99%, 23%, 1);
     color: hsla(360, 100%, 100%, .75);
@@ -45,6 +45,22 @@ body {
     transition: all 1.5s ease-in-out;
     cursor: pointer;
     outline: none;
+}
+
+.play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    padding: 1rem;
+    color:  hsla(0, 99%, 40%, 0.49);
+  
+}
+#play {
+     border: 4px solid hsla(226, 99%, 14%, 1);
+     border-radius: 100%;
+    background: hsla(226, 99%, 14%, 1);
+    box-shadow: 3px 3px 5px black;
 }
 .user-scorebtn {
     position: absolute;
@@ -59,4 +75,23 @@ body {
 .comp-scorebtn:hover, .user-scorebtn:hover {
     background: hsla(0, 99%, 40%, 0.75);
     color:  hsla(226, 99%, 23%, 1);
+}
+input {
+    display: none;
+}
+#result-message, #shoot-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: hsla(0, 33%, 4%, 0.96);
+}
+.comp-rps, .user-rps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    font-size: 5rem;
+    color: hsla(226, 99%, 14%, 1);
 }
