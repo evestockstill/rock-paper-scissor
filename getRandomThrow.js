@@ -1,21 +1,20 @@
 
 
-function getCompHand() {
-    const randomNumber = Math.floor(Math.random() * 3);
-    const compHand = randomNumber;
-    if (compHand === 0) {
-        return 0;
-    } else if (compHand === 1) {
-        return 1;
-    } else {
-        return 2;
+export function getRandomThrow(randomNumber) {
+    if (randomNumber === 0) {
+        return 'rock';
+    } else if (randomNumber === 1) {
+        return 'paper';
+    } else if (randomNumber === 2) {
+        return 'scissors';
     }
 }
-    
 
-export default getCompHand;
-
-
+export default function getThrow() {
+    const randomNumber = Math.floor(Math.random() * 3) + 0;
+    const compHand = getRandomThrow(randomNumber);
+    return compHand;
+}
 
 
 

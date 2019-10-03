@@ -1,28 +1,24 @@
-
-
-
-
-import { getCompHand } from '../getRandomThrow.js';
+import { getRandomThrow } from '../getRandomThrow.js';
 
 const test = QUnit.test;
 
-test('rock for 0', assert => {
-    const number = 0;
+test('returns rock when throw is 0', assert => {
+    const randomNumber = 0;
     const expected = 'rock';
-    const rpc = getCompHand(number);
-    assert.equal(rpc, expected);
+    const result = getRandomThrow(randomNumber);
+    assert.equal(result, expected);
 });
 test('paper for 1', assert => {
-    const number = 1;
+    const randomNumber = 1;
     const expected = 'paper';
-    const rpc = getCompHand(number);
-    assert.equal(rpc, expected);
+    const result = getRandomThrow(randomNumber);
+    assert.equal(result, expected);
 });
 test('scissors for 2', assert => {
-    const number = 2;
+    const randomNumber = 2;
     const expected = 'scissors';
-    const rpc = getCompHand(number);
-    assert.equal(rpc, expected);
+    const result = getRandomThrow(randomNumber);
+    assert.equal(result, expected);
 });
 
 
