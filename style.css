@@ -48,17 +48,19 @@ body {
 div {
     text-align: center;
 }
-#play {
-    font-size: 3rem;
-    padding: 1rem;
-    color:  hsla(0, 99%, 40%, 0.49);
-}
- #play-btn {
-    border: 4px solid hsla(226, 99%, 14%, 1);
-    border-radius: 100%;
-    background: hsla(226, 99%, 14%, 1);
-    box-shadow: 3px 3px 5px black;
+#play-btn {
+    font-size: 3.5rem;
+    color: hsla(226, 99%, 23%, 1);
+    background:  hsla(0, 99%, 40%, 0.49);
+    border: 3px solid  hsla(0, 99%, 40%, 0.49);
     outline: none;
+    border-radius: 100%;
+    box-shadow: 3px 3px 7px black;
+    transition: all 2s ease-in-out;
+}
+#play-btn:hover {
+    color: hsla(0, 99%, 40%, 0.49);
+    background:  hsla(226, 99%, 23%, 1);
 }
 .user-scorebtn {
     position: absolute;
@@ -77,6 +79,13 @@ div {
 input {
     display: none;
 }
+#up, #ur, #us {
+    border: black;
+    border-radius: 100%;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
 #result-message, #shoot-message {
     display: flex;
     justify-content: center;
@@ -84,6 +93,10 @@ input {
     text-align: center;
     font-size: 1.5rem;
     color: hsla(0, 33%, 4%, 0.96);
+}
+#results {
+    font-size: 2rem;
+    color: white;
 }
 .comp-rps, .user-rps {
     display: flex;
@@ -94,7 +107,7 @@ input {
     color: hsla(226, 99%, 14%, 1);
     transition: all 1s ease;
 }
-input:hover {
+input, #ur:hover, #up:hover, #us:hover {
     color: hsla(0, 99%, 40%, 0.75);
 }
 .results {

@@ -1,5 +1,5 @@
+import getThrow from '../getRandomThrow.js';
 import { getRandomThrow } from '../getRandomThrow.js';
-
 const test = QUnit.test;
 
 test('returns rock when throw is 0', assert => {
@@ -19,6 +19,12 @@ test('scissors for 2', assert => {
     const expected = 'scissors';
     const result = getRandomThrow(randomNumber);
     assert.equal(result, expected);
+});
+
+test('getThrow should give random number', assert => {
+    const compHand = ['rock', 'paper', 'scissors'];
+    const result = getThrow();
+    assert.equal(true, compHand.includes(result));
 });
 
 
