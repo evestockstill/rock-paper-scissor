@@ -1,1 +1,1 @@
-import './rps.test/js';
+import './checkResult.test./js';

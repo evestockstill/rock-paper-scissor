@@ -1,17 +1,29 @@
-// IMPORT MODULES under test here:
-// import example from '../src/example.js';
-import getThrow from '../getRandomThrow.js/index.js';
+
+
+
+
+import { getCompHand } from '../getRandomThrow.js';
+
 const test = QUnit.test;
 
-test('time to test a function', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
-
-    //Act 
-    // Call the function you're testing and set the result to a const
-
-    //Assert
-    // Make assertions about what is expected valid result
-    assert.equal(true, false);
+test('rock for 0', assert => {
+    const number = 0;
+    const expected = 'rock';
+    const rpc = getCompHand(number);
+    assert.equal(rpc, expected);
 });
-test('')
+test('paper for 1', assert => {
+    const number = 1;
+    const expected = 'paper';
+    const rpc = getCompHand(number);
+    assert.equal(rpc, expected);
+});
+test('scissors for 2', assert => {
+    const number = 2;
+    const expected = 'scissors';
+    const rpc = getCompHand(number);
+    assert.equal(rpc, expected);
+});
+
+
+
