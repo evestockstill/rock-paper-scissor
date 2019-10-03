@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 // import example from '../src/example.js';
-import getThrow from '../getThrow.js';
+import getThrow from '../getRandomThrow.js/index.js';
 const test = QUnit.test;
 
 test('time to test a function', function(assert) {
