@@ -11,7 +11,6 @@
     justify-content: center;
     align-items: top;
     background-size: contain;
-    padding: 1px;
     font-size: 20px;
     background: url("https://media0.giphy.com/media/3osxYfP8SJVa9XpVyo/100.webp?cid=790b76115d2fbcf1533455376f599199&rid=100.webp")center;
     border-bottom: 6px solid hsla(360, 100%, 100%, 1);
@@ -29,8 +28,8 @@ body {
  border-radius: 5px;
  text-align: center;
  color: hsla(360, 100%, 100%, 1);
- font-size: 3rem;
- padding: 10px 15px;
+ font-size: 1.8rem;
+ padding: 5px 15px;
  position: relative;
 }
 .user-scorebtn, .comp-scorebtn {
@@ -46,21 +45,20 @@ body {
     cursor: pointer;
     outline: none;
 }
-
-.play {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 4rem;
-    padding: 1rem;
-    color:  hsla(0, 99%, 40%, 0.49);
-  
+div {
+    text-align: center;
 }
 #play {
-     border: 4px solid hsla(226, 99%, 14%, 1);
-     border-radius: 100%;
+    font-size: 3rem;
+    padding: 1rem;
+    color:  hsla(0, 99%, 40%, 0.49);
+}
+ #play-btn {
+    border: 4px solid hsla(226, 99%, 14%, 1);
+    border-radius: 100%;
     background: hsla(226, 99%, 14%, 1);
     box-shadow: 3px 3px 5px black;
+    outline: none;
 }
 .user-scorebtn {
     position: absolute;
@@ -94,7 +92,11 @@ input {
     padding: 2rem;
     font-size: 5rem;
     color: hsla(226, 99%, 14%, 1);
+    transition: all 1s ease;
 }
-#results {
+input:hover {
+    color: hsla(0, 99%, 40%, 0.75);
+}
+.results {
     visibility: hidden;
 }
