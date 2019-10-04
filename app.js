@@ -8,8 +8,8 @@ const compChoice = document.getElementById('comp-choice');
 let userWin = 0;
 let compWin = 0;
 
-playBtn.addEventListener('click', () => {
-    
+
+const playGame = () => {
     const compHand = getThrow();
 
     compChoice.classList.remove('hidden');
@@ -34,4 +34,5 @@ playBtn.addEventListener('click', () => {
         
         
     } 
-});
+};
+playBtn.addEventListener('click', playGame);
