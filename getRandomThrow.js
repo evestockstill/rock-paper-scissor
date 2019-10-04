@@ -8,6 +8,7 @@ export function getRandomThrow(randomNumber) {
         return 'scissors';
     }
 }
+
 export default function getThrow() {
     const randomNumber = Math.floor(Math.random() * 3) + 0;
     const compHand = getRandomThrow(randomNumber);
