@@ -1,5 +1,5 @@
-import getThrow from '../getRandomThrow.js';
-import { getRandomThrow } from '../getRandomThrow.js';
+import getThrow, { getRandomThrow } from '../getRandomThrow.js';
+
 const test = QUnit.test;
 
 test('returns rock when throw is 0', assert => {

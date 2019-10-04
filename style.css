@@ -48,6 +48,26 @@ body {
 div {
     text-align: center;
 }
+.comp-rps, .user-rps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    font-size: 5rem;
+    color: hsla(226, 99%, 14%, 1);
+    transition: all 1s ease;
+}
+.user-pick {
+    border: 5px solid black;
+    border-radius: 100%;
+
+}
+input:checked + .user-pick {
+    border: 5px solid blue;
+}
+input:checked + .user-pick {
+    border: 5px solid hsla(0, 99%, 40%, 0.75);
+}
 #play-btn {
     font-size: 1.5rem;
     padding: 5px;
@@ -82,12 +102,6 @@ div {
 input {
     display: none;
 }
-#up, #ur, #us {
-    border: black;
-    border-radius: 100%;
-    transition: all 2s ease;
-    cursor: pointer; 
-}
 #result-message, #shoot-message {
     display: flex;
     justify-content: center;
@@ -101,18 +115,6 @@ input {
     font-size: 1.5rem;
     color: white;
 }
-.comp-rps, .user-rps {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2rem;
-    font-size: 5rem;
-    color: hsla(226, 99%, 14%, 1);
-    transition: all 1s ease;
-}
-input, #ur:hover, #up:hover, #us:hover {
-    color: hsla(0, 99%, 40%, 0.75);
-}
-#comp-rock, #comp-paper, #comp-scissors {
+.hidden {
     visibility: hidden;
 }
