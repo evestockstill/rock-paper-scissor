@@ -1,4 +1,4 @@
- 
+
 export function getRandomThrow(randomNumber) {
     if (randomNumber === 0) {
         return 'rock';
