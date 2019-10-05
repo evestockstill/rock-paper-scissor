@@ -11,8 +11,7 @@ export function getRandomThrow(randomNumber) {
 export function getResults(compHand, userPick) {
     if (userPick === compHand) {
         return 'tie'; 
-    } else if (userPick === 'rock' && compHand === 'scissors' || userPick === 'scissors' &&
-        compHand === 'paper' || userPick === 'paper' && compHand === 'rock') {
+    } else if (userPick === 'rock' && compHand === 'scissors' || userPick === 'scissors' && compHand === 'paper' || userPick === 'paper' && compHand === 'rock') {
         return 'win';
     } else {
         return 'loss';

@@ -11,18 +11,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header id="header">
-        <h1>Let's Play Rock Paper Scissors</h1>
     </header>
     <div class="score">
         <button class="user-scorebtn">user</button>
         <button class="comp-scorebtn">comp</button>
-        <span id="user-score">0</span>:<span id="comp-score">0</span>
+        <span id="user-score">0</span>|<span id="comp-score">0</span>
     </div>
     <div>
-        <span id="results"></span>
+        <span id="results"><span id="user-message"></span></span>
     </div>
     <section class="user-rps">
         <label>
@@ -41,7 +39,7 @@
     <div id="play">
         <button id="play-btn">123..Shoot</i></button>
     </div>
-    <span id="shoot-message">Make Your Pick and Press Shoot</span>
+    <span id="shoot-message"></span>
     <section class="comp-rps">
             <img src="./asset/rock.png" class="hidden" id="comp-choice">
     </section>
