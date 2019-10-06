@@ -87,8 +87,7 @@ input:checked:hover + .user-pick {
     transition: all 2s ease-out;
 } 
 #play-btn:hover:before {
-    width: 100%;
-   
+    width: 100%; 
 }
 #play-btn:hover {
     padding: 5px;

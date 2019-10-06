@@ -20,7 +20,6 @@ test('scissors for 2', assert => {
     const result = getRandomThrow(randomNumber);
     assert.equal(result, expected);
 });
-
 test('getThrow should give random number', assert => {
     const compHand = ['rock', 'paper', 'scissors'];
     const result = getThrow();

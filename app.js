@@ -28,7 +28,6 @@ const playGame = () => {
     } else {
         compWin++; 
         results.textContent = `Yes! I win, ${compHand} beats ${userPick} you lose!`;
-        
     } 
 };
 playBtn.addEventListener('click', playGame);
