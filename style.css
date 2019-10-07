@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace, sans-serif;
+    box-sizing: border-box;
+}
+#header {
+    min-height: 12vh;
+    display: flex;
+    background: white;
+    border-bottom: 6px solid hsla(360, 100%, 100%, 1);
+    border-top: 6px solid hsla(360, 100%, 100%, 1);
+    opacity: .3;
+}
+body {
+    min-height: 90vh;
+    background: hsla(229, 74%, 51%, 1)
+}
+.score {
+margin: 30px auto;
+border: 10px solid hsla(0, 99%, 40%, 0.49);
+width: 150px; border-radius: 5px;
+text-align: center;
+color: hsla(360, 100%, 100%, 1);
+text-shadow: 3px 2px 1px black;
+font-size: 1.9rem;
+padding: 5px 15px;
+position: relative;
+}
+.user-scorebtn, .comp-scorebtn {
+    display: block;
+    background: hsla(226, 99%, 23%, 1);
+    color: hsla(360, 100%, 100%, .75);
+    border: 3px solid hsla(226, 99%, 14%, 1);
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px hsla(226, 99%, 5%, 0.98);
+    transition: all 1.5s ease-in-out;
+    cursor: pointer;
+    outline: none;
+}
+div {
+    text-align: center;
+}
+.comp-rps, .user-rps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+.user-pick {
+    border: 5px solid hsla(0, 0%, 16%, 0.91);
+    border-radius: 100%;
+    box-shadow: 3px 3px 4px black;
+    cursor: pointer;
+}
+input:checked + .user-pick {
+    border: 5px solid   hsla(0, 0%, 16%, 0.91);
+    box-shadow: 8px 8px 8px hsla(249, 100%, 14%, 1)
+}
+input:checked:hover + .user-pick {
+    box-shadow: 8px 8px 8px hsla(249, 100%, 14%, 1)
+}
+#play-btn {
+    font-size: 1.5rem;
+    padding: 3px;
+    margin-bottom: 10px;
+    color: hsla(0, 99%, 40%, 0.49);
+    text-shadow: 2px 1px 1px black;
+    background:  hsla(0, 99%, 40%, 0.49);
+    border: 5px solid   hsla(0, 99%, 40%, 0.49);
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 7px 7px 7px black;
+    transition: all 1s ease-in-out;
+}
+#play-btn:before {
+	content:'ROCK PAPER SCISSORS';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	height: 92px;
+	background: url("https://media0.giphy.com/media/3osxYfP8SJVa9XpVyo/100.webp?cid=790b76115d2fbcf1533455376f599199&rid=100.webp")center;
+	border-radius: 5px;
+    transition: all 2s ease-out;
+} 
+#play-btn:hover:before {
+    width: 100%; 
+}
+#play-btn:hover {
+    padding: 5px;
+    color: hsla(0, 99%, 40%, 0.49);
+    background:  hsla(0, 0%, 16%, 0.91);
+    border: 3px solid  hsla(0, 0%, 16%, 0.91);
+}
+.user-scorebtn {
+    position: absolute;
+    top: 19px;
+    left: 95%;
+}
+.comp-scorebtn {
+    position: absolute;
+    top: 19px;
+    right: 95%; 
+}
+.comp-scorebtn:hover, .user-scorebtn:hover {
+    background: hsla(0, 99%, 40%, 0.75);
+    color:  hsla(226, 99%, 23%, 1);
+}
+input {
+    display: none;
+}
+#result-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white; 
+}
+#results {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 3px 2px 1px black;
+}
+#comp-choice {
+    border: 5px solid  hsla(0, 0%, 16%, 0.91);
+    border-radius: 100%;
+    box-shadow: 3px 3px 4px black;
+}
+.hidden {
+    visibility: hidden;
+}
