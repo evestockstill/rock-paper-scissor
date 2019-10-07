@@ -16,10 +16,7 @@ const playGame = () => {
     compChoice.src = src;
     const userHand = document.querySelector('input:checked');
     const userPick = userHand.value;
-    userScore.textContent = userWin;
-    compScore.textContent = compWin;
     const gameResults = getResults(compHand, userPick);
-
     if (gameResults === 'tie') {
         results.textContent = `Boring you picked ${userPick} and I picked ${compHand} it's a tie`;
     } else if (gameResults === 'win') {
@@ -29,5 +26,7 @@ const playGame = () => {
         compWin++; 
         results.textContent = `Yes! I win, ${compHand} beats ${userPick} you lose!`;
     } 
+    userScore.textContent = userWin;
+    compScore.textContent = compWin;
 };
 playBtn.addEventListener('click', playGame);
